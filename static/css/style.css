@@ -1,0 +1,25 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.choice-box {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.choice-box.yes {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.choice-box.no {
+  background-color: #f8d7da;
+  color: #721c24;
+}

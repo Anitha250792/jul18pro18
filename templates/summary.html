@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card shadow p-4 text-center">
+  <h3 class="mb-4">✅ Thanks for voting!</h3>
+  <p class="lead">You chose:</p>
+  <div class="choice-box {{ choice|lower }}">
+    {{ choice }}
+  </div>
+  <a href="{{ url_for('poll') }}" class="btn btn-outline-secondary mt-4">Vote Again</a>
+</div>
+{% endblock %}

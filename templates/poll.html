@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card shadow p-4">
+  <h3 class="mb-4 text-center">🗳️ Live Poll: Do you like Flask?</h3>
+  <form method="POST">
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="radio" name="vote" id="yes" value="Yes" required>
+      <label class="form-check-label" for="yes">Yes</label>
+    </div>
+    <div class="form-check mb-4">
+      <input class="form-check-input" type="radio" name="vote" id="no" value="No">
+      <label class="form-check-label" for="no">No</label>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Submit Vote</button>
+  </form>
+</div>
+{% endblock %}
